@@ -8,17 +8,17 @@
   <style>
     /* ── Design tokens ─────────────────────────────────────────── */
     :root {
-      --navy:   #1e3a5f;
+      --navy:   #0e1f82;
       --teal:   #1f7a65;
-      --gold:   #c8900a;
-      --gold-lt:#f5c842;
+      --gold:   #d4520a;
+      --gold-lt:#f5781a;
       --slate:  #374151;
       --muted:  #6b7280;
       --bg:     #f5f7fb;
       --white:  #ffffff;
       --border: #e2e8f0;
       --radius: 10px;
-      --shadow: 0 2px 16px rgba(30,58,95,.09);
+      --shadow: 0 2px 16px rgba(14,31,130,.10);
       --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     }
 
@@ -37,7 +37,7 @@
     .tag  { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .08em;
             text-transform: uppercase; color: var(--teal); background: #e6f4f0;
             border-radius: 40px; padding: 4px 14px; margin-bottom: 16px; }
-    .tag-gold  { color: var(--gold); background: #fef9ec; }
+    .tag-gold  { color: var(--gold); background: #fdeee5; }
     h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; color: var(--navy); }
     h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(--navy); line-height: 1.25; }
     h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy); }
@@ -51,11 +51,11 @@
     .btn { display: inline-block; padding: 13px 28px; border-radius: 6px;
            font-size: .95rem; font-weight: 700; cursor: pointer; transition: all .18s; }
     .btn-primary { background: var(--gold); color: var(--white); }
-    .btn-primary:hover { background: #a87008; }
+    .btn-primary:hover { background: #b03d06; }
     .btn-outline { border: 2px solid var(--white); color: var(--white); }
     .btn-outline:hover { background: rgba(255,255,255,.12); }
     .btn-navy  { background: var(--navy); color: var(--white); }
-    .btn-navy:hover { background: #162d4a; }
+    .btn-navy:hover { background: #0a166a; }
 
     /* ── Nav ───────────────────────────────────────────────────── */
     nav { position: sticky; top: 0; z-index: 100; background: var(--navy);
@@ -76,7 +76,7 @@
     @media (max-width: 700px) { .nav-links { display: none; } }
 
     /* ── Hero ──────────────────────────────────────────────────── */
-    .hero { background: linear-gradient(140deg, var(--navy) 0%, #163052 60%, #1a4d40 100%);
+    .hero { background: linear-gradient(140deg, var(--navy) 0%, #08126e 55%, #0f3d56 100%);
             padding: 96px 0 80px; }
     .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
     .hero h1 { color: var(--white); margin-bottom: 20px; }
@@ -114,7 +114,7 @@
                   margin-bottom: 16px; }
     .svc-icon-blue  { background: #dbeafe; }
     .svc-icon-green { background: #d1fae5; }
-    .svc-icon-amber { background: #fef3c7; }
+    .svc-icon-amber { background: #fde8d8; }
     .svc-card h2 { font-size: 1.25rem; margin-bottom: 8px; }
     .svc-card .tagline { font-size: .82rem; color: var(--muted); font-style: italic; }
     .svc-body { padding: 20px 28px 28px; flex: 1; }
@@ -193,7 +193,7 @@
                                   .approach-steps::before { display: none; } }
 
     /* ── CTA Banner ────────────────────────────────────────────── */
-    .cta-banner { background: linear-gradient(135deg, var(--navy) 0%, #1a4d40 100%);
+    .cta-banner { background: linear-gradient(135deg, var(--navy) 0%, #0f3d56 100%);
                   padding: 72px 0; text-align: center; }
     .cta-banner h2 { color: var(--white); margin-bottom: 16px; }
     .cta-banner p  { color: rgba(255,255,255,.72); max-width: 560px; margin: 0 auto 36px; }
@@ -224,7 +224,7 @@
     @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
 
     /* ── Footer ────────────────────────────────────────────────── */
-    footer { background: #0f1f33; padding: 48px 0 28px; color: rgba(255,255,255,.6); }
+    footer { background: #080d40; padding: 48px 0 28px; color: rgba(255,255,255,.6); }
     .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
                     margin-bottom: 40px; }
     .footer-brand .logo { font-size: 1.1rem; font-weight: 800; color: var(--white);
@@ -277,7 +277,7 @@
   <div class="container">
     <div class="hero-inner">
       <div>
-        <div class="tag tag-gold" style="background:#3a2800;color:var(--gold-lt);">Common Good Consulting</div>
+        <div class="tag tag-gold" style="background:#3d1200;color:var(--gold-lt);">Common Good Consulting</div>
         <h1>Mission-Driven.<br/><em>Compliance-Ready.</em><br/>Built to Last.</h1>
         <p class="lead">
           We help nonprofits of every size strengthen financial controls, navigate federal and state compliance requirements, and build the operational systems that let your mission thrive.
